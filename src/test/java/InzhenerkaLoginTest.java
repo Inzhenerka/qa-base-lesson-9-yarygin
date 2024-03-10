@@ -13,4 +13,18 @@ public class InzhenerkaLoginTest {
         loginPage.login();
         loginPage.logout();
     }
+
+    @Test
+    @DisplayName("Проверка логина и имени пользователя")
+        public void userLoginAndCheckName(){
+        LoginPage loginPage = new LoginPage();
+        loginPage.openPage();
+        loginPage.setUsername("user");
+        loginPage.setPassword("user123");
+        loginPage.checkLoginButtonExists();
+        loginPage.login();
+        loginPage.checkNameHeaderExists();
+        loginPage.logout();
+        }
+
 }
