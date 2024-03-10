@@ -15,7 +15,7 @@ public class InzhenerkaLoginTest {
     }
 
     @Test
-    @DisplayName("Проверка логина и имени пользователя")
+    @DisplayName("Проверка логина и текста приветствия пользователя")
         public void userLoginAndCheckName(){
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
