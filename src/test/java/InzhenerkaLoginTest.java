@@ -7,6 +7,7 @@ public class InzhenerkaLoginTest {
         loginPage.openPage();
         loginPage.setUsername("admin");
         loginPage.setPassword("admin123");
+        loginPage.checkLoginButtonExists();
         loginPage.login();
         loginPage.logout();
     }

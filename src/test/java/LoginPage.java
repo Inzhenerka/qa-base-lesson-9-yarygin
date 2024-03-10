@@ -26,6 +26,10 @@ public class LoginPage extends BaseTest {
         loginButton.click();
     }
 
+    public void checkLoginButtonExists() {
+        loginButton.exists();
+    }
+
     public void logout() {
         logoutButton.click();
     }
