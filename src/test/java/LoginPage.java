@@ -1,5 +1,7 @@
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -28,6 +30,7 @@ public class LoginPage extends BaseTest {
 
     public void checkLoginButtonExists() {
         loginButton.exists();
+        loginButton.shouldHave(text("Войти"));
     }
 
     public void logout() {
